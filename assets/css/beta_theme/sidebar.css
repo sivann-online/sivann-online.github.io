@@ -1,0 +1,96 @@
+ul.sidebar {
+  list-style-type: none;
+  margin: 0 0 20px;
+  padding: 0;
+  border: 1px solid #e2e2e2; }
+  ul.sidebar .logo {
+    border-bottom: 1px solid #e2e2e2; }
+    ul.sidebar .logo a {
+      border: none;
+      padding: 0; }
+    ul.sidebar .logo img {
+      padding: 5px 0;
+      height: 50px; }
+  ul.sidebar > li {
+    padding: 0 10px; }
+    ul.sidebar > li:last-child > button:not(.linklist), ul.sidebar > li:last-child > button.collapsed {
+      border-bottom: none; }
+    ul.sidebar > li:last-child > a:not(.linklist), ul.sidebar > li:last-child > a.collapsed {
+      border-bottom: none; }
+    ul.sidebar > li:last-child .shelf_second > li:last-child > button:not(.linklist), ul.sidebar > li:last-child .shelf_second > li:last-child > button.collapsed {
+      border-bottom: none; }
+    ul.sidebar > li:last-child .shelf_second > li:last-child > a:not(.linklist), ul.sidebar > li:last-child .shelf_second > li:last-child > a.collapsed {
+      border-bottom: none; }
+    ul.sidebar > li:last-child .shelf_second > li:last-child .shelf_third > li:last-child > button:not(.linklist), ul.sidebar > li:last-child .shelf_second > li:last-child .shelf_third > li:last-child > button.collapsed {
+      border-bottom: none; }
+    ul.sidebar > li:last-child .shelf_second > li:last-child .shelf_third > li:last-child > a:not(.linklist), ul.sidebar > li:last-child .shelf_second > li:last-child .shelf_third > li:last-child > a.collapsed {
+      border-bottom: none; }
+  ul.sidebar button, ul.sidebar a {
+    border: none;
+    border-bottom: 1px solid #e2e2e2;
+    background: none;
+    color: #424242;
+    display: block;
+    font-size: .9rem;
+    padding: 10px 0;
+    text-decoration: none;
+    text-align: left;
+    width: 100%; }
+    ul.sidebar button.linklist, ul.sidebar a.linklist {
+      position: relative; }
+      ul.sidebar button.linklist.collapsed:after, ul.sidebar a.linklist.collapsed:after {
+        border-width: 1px 0 0 1px;
+        top: 15px; }
+      ul.sidebar button.linklist:after, ul.sidebar a.linklist:after {
+        border: 2px solid #424242;
+        border-width: 0 1px 1px 0;
+        content: "";
+        display: block;
+        height: 8px;
+        position: absolute;
+        right: 15px;
+        transform: rotate(225deg);
+        top: 20px;
+        width: 8px; }
+  ul.sidebar ul.shelf_second, ul.sidebar ul.shelf_third {
+    padding-left: 15px;
+    list-style-type: none; }
+
+#index_sidebar_shelf_top > li:not(.logo) {
+  padding: 0;
+  position: relative; }
+  #index_sidebar_shelf_top > li:not(.logo) button, #index_sidebar_shelf_top > li:not(.logo) a {
+    background: #e2e2e2;
+    border-color: #fff;
+    padding: 10px; }
+    #index_sidebar_shelf_top > li:not(.logo) button.linklist.collapsed:after, #index_sidebar_shelf_top > li:not(.logo) a.linklist.collapsed:after {
+      right: 20px;
+      display: block;
+      top: 13px; }
+    #index_sidebar_shelf_top > li:not(.logo) button.linklist:after, #index_sidebar_shelf_top > li:not(.logo) button.linklist:before, #index_sidebar_shelf_top > li:not(.logo) a.linklist:after, #index_sidebar_shelf_top > li:not(.logo) a.linklist:before {
+      border: 2px solid #ff674f;
+      border-width: 0 1px 0 0;
+      content: "";
+      display: block;
+      height: 15px;
+      position: absolute;
+      transform: none;
+      width: 15px; }
+    #index_sidebar_shelf_top > li:not(.logo) button.linklist:after, #index_sidebar_shelf_top > li:not(.logo) a.linklist:after {
+      display: none; }
+    #index_sidebar_shelf_top > li:not(.logo) button.linklist:before, #index_sidebar_shelf_top > li:not(.logo) a.linklist:before {
+      right: 13px;
+      transform: rotate(90deg);
+      top: 6px; }
+  #index_sidebar_shelf_top > li:not(.logo) .shelf_second {
+    padding: 0; }
+    #index_sidebar_shelf_top > li:not(.logo) .shelf_second a, #index_sidebar_shelf_top > li:not(.logo) .shelf_second button {
+      background: #fff;
+      border-color: #e2e2e2;
+      padding-left: 20px; }
+  #index_sidebar_shelf_top > li:not(.logo) .shelf_third {
+    padding: 0; }
+    #index_sidebar_shelf_top > li:not(.logo) .shelf_third a, #index_sidebar_shelf_top > li:not(.logo) .shelf_third button {
+      background: #ff674f;
+      color: #fff;
+      padding-left: 30px; }

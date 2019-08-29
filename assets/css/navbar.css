@@ -1,0 +1,82 @@
+.global-cart-count {
+  background: #ff674f;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 14px;
+  height: 25px;
+  line-height: 26px;
+  text-align: center;
+  vertical-align: middle;
+  width: 25px; }
+
+#header nav .close-dropdown {
+  border: none; }
+  #header nav .close-dropdown:hover {
+    background: none;
+    color: #424242; }
+
+@media (min-width: 992px) {
+  #header .logo img {
+    height: 40px;
+    padding: 5px 0; }
+  #header .link_shelf_top > li {
+    padding: 10px 0 5px; }
+  #header .main-nav .link_shelf_top > li > a {
+    line-height: 28px; 
+    color: #fff; }
+    #header .main-nav .link_shelf_top > li > a:after {
+      border-bottom: 2px solid #ff674f;
+      content: "";
+      display: block;
+      opacity: 0;
+      transform: translateY(-30px);
+      transition: all .2s linear;
+      width: 100%; }
+  #header .main-nav .link_shelf_top > li.dropdown.show > a, #header .main-nav .link_shelf_top > li > a:hover {
+    background: none;
+    color: #B39D64; }
+    #header .main-nav .link_shelf_top > li.dropdown.show > a:after, #header .main-nav .link_shelf_top > li > a:hover:after {
+      opacity: 1;
+      transform: translateY(0px); }
+  #header .main-nav li.dropdown.show > a, #header .main-nav .relative:hover > a, #header .main-nav a:hover, #header .main-nav .collection:hover .title a {
+    background: none;
+    color: #ff674f; }
+  #header .main-nav .link_shelf_second > .relative:hover {
+    background: none; }
+  #header .main-nav .link_shelf_third a:hover {
+    background: #ff674f;
+    color: #fff; }
+  #header .main-nav .dropdown-menu:not(.collection-all) .row {
+    margin: 0;
+    padding: 15px; }
+    #header .main-nav .dropdown-menu:not(.collection-all) .row .col-sm-2 {
+      padding: 0 10px; }
+    #header .main-nav .dropdown-menu:not(.collection-all) .row .title a {
+      border-bottom: 2px solid #e2e2e2; }
+    #header .main-nav .dropdown-menu:not(.collection-all) .row .col-sm-2 ul:hover .title a, #header .main-nav .dropdown-menu:not(.collection-all) .row .collection:hover .title a, #header .main-nav .dropdown-menu:not(.collection-all) .row .title a:hover {
+      background: none;
+      border-color: #ff674f;
+      color: #ff674f; }
+  #header .main-nav .collection-all .relative, #header .main-nav .collection-all .products {
+    padding: 20px; }
+  #header .main-nav .collection-all .title a, #header .main-nav .collection-all .collection:hover .products a:hover {
+    color: #ff674f; }
+  #header .main-nav .collection-all .collection:hover a {
+    color: #424242; }
+  #header .global-cart-count {
+    position: relative; }
+    #header .global-cart-count:after {
+      border-right: 1px solid #424242;
+      content: "";
+      display: block;
+      height: 26px;
+      position: absolute;
+      right: -12px;
+      top: 0; } }
+
+@media (max-width: 450px) {
+  .global-cart-count {
+    font-size: 12px;
+    height: 22px;
+    line-height: 22px;
+    width: 22px; } }
