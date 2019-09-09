@@ -27,13 +27,19 @@
 #_2x2block, #_3x4block {
   display: flex;
   flex-wrap: wrap; }
-  #_2x2block .block_item img, #_3x4block .block_item img {
-    height: 100%;
-    width: 100%; }
+
+#_3x4block .block_item img {
+  height: 100%;
+  width: 100%; }
+
+#_2x2block .block_item img {
+  width: 90%; }
 
 #_2x2block .block_item {
-  flex: 0 0 50%;
-  height: 50vw; }
+  flex: 0 0 50%; 
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 
 #_2x2block .swiper-button-prev, #_2x2block .swiper-button-next {
   border: 1px solid #fff;
